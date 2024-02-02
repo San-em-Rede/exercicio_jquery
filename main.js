@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('form').on ('submit', funciton(e){
+    $('form').on ('submit', function(e){
         e.preventDefault();
-        const NomeDaTarefa = $('input').val();
+        const nomeDaTarefa = $('input').val();
         const novaTarefa = $(`<li>${nomeDaTarefa}</li>`)
 
         $(novaTarefa).appendTo('ul')
